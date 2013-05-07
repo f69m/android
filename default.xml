@@ -1,6 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <manifest>
 
+  <remote  name="aosp"
+           fetch="https://android.googlesource.com"
+           review="android-review.googlesource.com" />
+
   <remote  name="phablet"
            fetch="git://phablet.ubuntu.com" />
 
@@ -12,11 +16,11 @@
            sync-c="true"
            sync-j="1" />
 
-  <project path="build" name="CyanogenMod/android_build">
+  <project path="build" name="f69m/android_build" remote="github" >
     <copyfile src="core/root.mk" dest="Makefile" />
   </project>
 
-  <project path="android" name="CyanogenMod/android" />
+  <project path="android" name="f69m/android" remote="github" revision="refs/heads/phablet-10.1-tf300t" />
 
   <project path="abi/cpp" name="CyanogenMod/android_abi_cpp" />
   <project path="bionic" name="CyanogenMod/android_bionic" />
@@ -25,13 +29,7 @@
   <project path="development" name="CyanogenMod/android_development" />
   <project path="device/common" name="CyanogenMod/android_device_common" />
   <project path="device/generic/armv7-a-neon" name="CyanogenMod/android_device_generic_armv7-a-neon" />
-  <project path="device/generic/armv7-a" name="CyanogenMod/android_device_generic_armv7-a" />
   <project path="device/generic/common" name="CyanogenMod/android_device_generic_common" />
-  <project path="device/generic/goldfish" name="CyanogenMod/android_device_generic_goldfish" />
-  <project path="device/generic/mips" name="CyanogenMod/android_device_generic_mips" />
-  <project path="device/generic/x86" name="CyanogenMod/android_device_generic_x86" />
-  <project path="device/sample" name="CyanogenMod/android_device_sample" groups="device" />
-  <project path="device/ti/panda" name="CyanogenMod/android_device_ti_panda" groups="device" />
 
   <project path="external/aac" name="CyanogenMod/android_external_aac" />
   <project path="external/bouncycastle" name="CyanogenMod/android_external_bouncycastle" />
@@ -92,26 +90,8 @@
   <project path="hardware/invensense" name="CyanogenMod/android_hardware_invensense" />
   <project path="hardware/libhardware" name="CyanogenMod/android_hardware_libhardware" />
   <project path="hardware/libhardware_legacy" name="CyanogenMod/android_hardware_libhardware_legacy" />
-  <project path="hardware/msm7k" name="CyanogenMod/android_hardware_msm7k" />
-  <project path="hardware/qcom/audio" name="CyanogenMod/android_hardware_qcom_audio" />
-  <project path="hardware/qcom/audio-caf" name="CyanogenMod/android_hardware_qcom_audio-caf" />
-  <project path="hardware/qcom/bt" name="CyanogenMod/android_hardware_qcom_bt" />
-  <project path="hardware/qcom/camera" name="CyanogenMod/android_hardware_qcom_camera" />
-  <project path="hardware/qcom/display" name="CyanogenMod/android_hardware_qcom_display" />
-  <project path="hardware/qcom/display-caf" name="CyanogenMod/android_hardware_qcom_display-caf" />
-  <project path="hardware/qcom/gps" name="CyanogenMod/android_hardware_qcom_gps" />
-  <project path="hardware/qcom/keymaster" name="CyanogenMod/android_hardware_qcom_keymaster" />
-  <project path="hardware/qcom/media" name="CyanogenMod/android_hardware_qcom_media" />
-  <project path="hardware/qcom/msm8960" name="CyanogenMod/android_hardware_qcom_msm8960" />
-  <project path="hardware/qcom/power" name="CyanogenMod/android_hardware_qcom_power" />
-  <project path="hardware/qcom/sensors" name="CyanogenMod/android_hardware_qcom_sensors" />
   <project path="hardware/qcom/wlan" name="CyanogenMod/android_hardware_qcom_wlan" />
   <project path="hardware/ril" name="CyanogenMod/android_hardware_ril" />
-  <project path="hardware/samsung_slsi/exynos5" name="CyanogenMod/android_hardware_samsung_slsi_exynos5" />
-  <project path="hardware/ti/omap3" name="CyanogenMod/android_hardware_ti_omap3" />
-  <project path="hardware/ti/omap4xxx" name="CyanogenMod/android_hardware_ti_omap4xxx" />
-  <project path="hardware/ti/wlan" name="CyanogenMod/android_hardware_ti_wlan" />
-  <project path="hardware/ti/wpan" name="CyanogenMod/android_hardware_ti_wpan" />
 
   <project path="libnativehelper" name="CyanogenMod/android_libnativehelper" />
 
@@ -122,6 +102,7 @@
   <project path="prebuilts/gcc/linux-x86/host/i686-linux-glibc2.7-4.4.3" name="platform/prebuilts/gcc/linux-x86/host/i686-linux-glibc2.7-4.4.3" groups="linux" revision="refs/tags/android-4.2.2_r1" />
   <project path="prebuilts/gcc/linux-x86/host/i686-linux-glibc2.7-4.6" name="platform/prebuilts/gcc/linux-x86/host/i686-linux-glibc2.7-4.6" groups="linux" revision="refs/tags/android-4.2.2_r1" />
   <project path="prebuilts/gcc/linux-x86/host/x86_64-linux-glibc2.7-4.6" name="platform/prebuilts/gcc/linux-x86/host/x86_64-linux-glibc2.7-4.6" groups="linux" revision="refs/tags/android-4.2.2_r1" />
+
   <project path="prebuilts/misc" name="platform/prebuilts/misc" revision="refs/tags/android-4.2.2_r1" />
   <project path="prebuilts/ndk" name="platform/prebuilts/ndk" revision="refs/tags/android-4.2.2_r1" />
   <project path="prebuilts/qemu-kernel" name="platform/prebuilts/qemu-kernel" revision="refs/tags/android-4.2.2_r1" />
@@ -141,4 +122,10 @@
 
   <project path="ubuntu/assets" name="ubuntu/assets" revision="refs/heads/master" />
   <project path="ubuntu/uchroot" name="ubuntu/uchroot" revision="refs/heads/master" />
+  <project path="ubuntu/hybris" name="f69m/ubuntu-phablet_libhybris" remote="github" revision="refs/heads/master" />
+  <project path="ubuntu/platform-api" name="f69m/ubuntu-phablet_platform-api" remote="github" revision="refs/heads/master" />
+
+  <project path="kernel/asus/tf300t" name="f69m/android_kernel_asus_tf300t" remote="github" />
+  <project path="device/asus/tf300t" name="f69m/android_device_asus_tf300t" remote="github" />
+
 </manifest>
