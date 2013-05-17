@@ -121,7 +121,7 @@
   <project path="vendor/cm" name="CyanogenMod/android_vendor_cm" />
 
   <project path="ubuntu/assets" name="ubuntu/assets" revision="refs/heads/master" />
-  <project path="ubuntu/uchroot" name="ubuntu/uchroot" revision="refs/heads/master" />
+  <project path="ubuntu/uchroot" name="f69m/ubuntu-phablet_uchroot" remote="github" />
   <project path="ubuntu/hybris" name="f69m/ubuntu-phablet_libhybris" remote="github" revision="refs/heads/master" />
   <project path="ubuntu/platform-api" name="f69m/ubuntu-phablet_platform-api" remote="github" revision="refs/heads/master" />
 
