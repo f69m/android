@@ -44,6 +44,7 @@
   <project path="external/gcc-demangle" name="CyanogenMod/android_external_gcc-demangle" />
   <project path="external/genext2fs" name="CyanogenMod/android_external_genext2fs" />
   <project path="external/giflib" name="CyanogenMod/android_external_giflib" />
+  <project path="external/gpg" name="CyanogenMod/android_external_gpg" />
   <project path="external/gtest" name="CyanogenMod/android_external_gtest" />
   <project path="external/harfbuzz" name="CyanogenMod/android_external_harfbuzz" />
   <project path="external/htop" name="CyanogenMod/android_external_htop" />
