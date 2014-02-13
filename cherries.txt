@@ -1,0 +1,8 @@
+
+# libc: support using old property system via makefile flag
+# * To turn this on, specify following in device's BoardConfig.mk:
+#   BUILD_OLD_SYS_PROPS := true
+#   COMMON_GLOBAL_CFLAGS += -DBUILD_OLD_SYS_PROPS
+bionic 3389
+system/core 3390
+
