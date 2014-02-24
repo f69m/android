@@ -21,7 +21,7 @@
            sync-j="4"
            sync-c="true" />
 
-  <project path="manifest" name="android" remote="f69m" revision="multirom-tf300t" />
+  <project path="manifest" name="android" remote="f69m" revision="multirom" />
 
   <!-- OmniROM/AOSP -->
   <project path="build" name="android_build" remote="omnirom" revision="android-4.4" groups="pdk" >
@@ -63,5 +63,9 @@
   <!-- TF300T -->
   <project path="device/asus/tf300t" name="android_device_asus_tf300t" remote="f69m" revision="multirom-v22-1" />
   <project path="kernel/asus/tf300t" name="android_kernel_asus_tf300t" remote="f69m" revision="multirom-v22-1" />
+
+  <!-- TF700T -->
+  <project path="device/asus/tf700t" name="android_device_asus_tf700t" remote="f69m" revision="multirom-v22-1" />
+  <project path="kernel/asus/tf700t" name="android_kernel_asus_tf700t" remote="f69m" revision="multirom-v22-1" />
 
 </manifest>
