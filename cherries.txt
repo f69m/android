@@ -6,3 +6,8 @@
 bionic 3389
 system/core 3390
 
+# support old property system in recovery
+bionic 5543
+build 5545
+system/core 5544
+
