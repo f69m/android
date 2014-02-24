@@ -11,7 +11,7 @@ set -e
 # [2/2] init: support using old property system via makefile flag
 # URL: https://gerrit.omnirom.org/3390
 ( cd system/core; \
-  git fetch https://gerrit.omnirom.org/android_system_core refs/changes/90/3390/4 && \
+  git fetch https://gerrit.omnirom.org/android_system_core refs/changes/90/3390/5 && \
   git cherry-pick FETCH_HEAD )
 
 # [1/3] support old property system in recovery
@@ -29,6 +29,6 @@ set -e
 # [2/3] support old property system in recovery
 # URL: https://gerrit.omnirom.org/5544
 ( cd system/core; \
-  git fetch https://gerrit.omnirom.org/android_system_core refs/changes/44/5544/3 && \
+  git fetch https://gerrit.omnirom.org/android_system_core refs/changes/44/5544/5 && \
   git cherry-pick FETCH_HEAD )
 
