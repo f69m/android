@@ -14,21 +14,3 @@ set -e
   git fetch https://gerrit.omnirom.org/android_system_core refs/changes/90/3390/5 && \
   git cherry-pick FETCH_HEAD )
 
-# [1/3] support old property system in recovery
-# URL: https://gerrit.omnirom.org/5543
-( cd bionic; \
-  git fetch https://gerrit.omnirom.org/android_bionic refs/changes/43/5543/3 && \
-  git cherry-pick FETCH_HEAD )
-
-# [3/3] support old property system in recovery
-# URL: https://gerrit.omnirom.org/5545
-( cd build; \
-  git fetch https://gerrit.omnirom.org/android_build refs/changes/45/5545/3 && \
-  git cherry-pick FETCH_HEAD )
-
-# [2/3] support old property system in recovery
-# URL: https://gerrit.omnirom.org/5544
-( cd system/core; \
-  git fetch https://gerrit.omnirom.org/android_system_core refs/changes/44/5544/5 && \
-  git cherry-pick FETCH_HEAD )
-
