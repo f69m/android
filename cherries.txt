@@ -4,14 +4,14 @@
 #   BUILD_OLD_SYS_PROPS := true
 #   COMMON_GLOBAL_CFLAGS += -DBUILD_OLD_SYS_PROPS
 bionic 3389
-system/core 3390
+#system/core 3390
 
 # support old property system in recovery
-bionic 5543
-build 5545
-system/core 5544
+#bionic 5543
+#build 5545
+#system/core 5544
 
 # adbd_oldprops
-build 5929
-system/core 5935
+#build 5929
+#system/core 5935
 
