@@ -52,6 +52,9 @@ def validateCherry(data):
     elif st == 'MERGED':
         print('Ignoring merged cherry %d %s' % (data['_number'], data['subject']))
         return False
+    elif st == 'ABANDONED':
+        print('Ignoring abandoned cherry %d %s' % (data['_number'], data['subject']))
+        return False
     else:
         print('Unknown status %s for %d %s' % (data['status'], data['_number'], data['subject']))
         return False
