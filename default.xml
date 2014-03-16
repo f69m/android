@@ -57,7 +57,7 @@
 
   <!-- MultiROM -->
   <project path="bootable/multirom" name="multirom" remote="f69m" revision="multirom-v22-1" />
-  <project path="bootable/recovery" name="multirom-twrp" remote="f69m" revision="multirom-v22-1"/>
+  <project path="bootable/recovery" name="multirom-twrp" remote="f69m" revision="multirom-v22-2"/>
   <project path="external/libbootimg" name="libbootimg" remote="tasssadar" revision="master" />
 
   <!-- TF300T -->
